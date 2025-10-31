@@ -25,16 +25,38 @@ Características típicas:
 
 ## Estrutura dos problemas
 - [`01-knapsack-01/`](./01-knapsack-01/) — 0/1 Knapsack (maximização de valor com limite de peso)
+  - ✅ Implementação completa em C# com Top-Down, Bottom-Up 2D/1D, reconstrução
 - [`02-longest-increasing-subsequence/`](./02-longest-increasing-subsequence/) — LIS (subsequência crescente mais longa)
+  - ✅ Implementação completa com O(n²) DP e O(n log n) Patience Sorting
 - [`03-edit-distance/`](./03-edit-distance/) — Distância de Edição (Levenshtein)
+  - ✅ Implementação 2D e 1D otimizada com reconstrução de operações
 - [`04-coin-change/`](./04-coin-change/) — Troco (contagem e/ou mínimo de moedas)
+  - ✅ Implementação de mínimo de moedas e contagem de combinações
 - [`05-longest-common-subsequence/`](./05-longest-common-subsequence/) — LCS (subsequência comum mais longa)
+  - ✅ Implementação 2D e 1D com reconstrução e diff utility
 
 Cada pasta tem:
 - Enunciado e exemplos bem definidos
 - Restrições e metas de complexidade
 - Dicas para consultar só após tentar
 - Referências curadas, com foco em C# e implementação prática
+- **Projeto C# completo e testado** com múltiplas abordagens, reconstrução de soluções e benchmarks
+
+## Como executar os projetos
+```powershell
+# Navegue até a pasta do projeto
+cd 01-knapsack-01
+
+# Execute o projeto
+dotnet run
+
+# Ou execute todos os projetos em sequência
+cd 01-knapsack-01 ; dotnet run
+cd ../02-longest-increasing-subsequence ; dotnet run
+cd ../03-edit-distance ; dotnet run
+cd ../04-coin-change ; dotnet run
+cd ../05-longest-common-subsequence ; dotnet run
+```
 
 ## Referências gerais (C# e algoritmos)
 - Documentação C# e .NET:
