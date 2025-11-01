@@ -24,6 +24,35 @@ Características típicas:
 4. Implemente múltiplas variações (Top-Down e Bottom-Up, otimizações de espaço, reconstrução da resposta).
 
 ## Estrutura dos problemas
+
+### 🌟 Enterprise Examples (Casos Práticos) — **13 CASOS**
+- [`00-enterprise-examples/`](./00-enterprise-examples/) — **Pasta principal com subprojetos organizados**
+  
+  **✅ Implementados e Testados:**
+  - [`01-fibonacci-memoization/`](./00-enterprise-examples/01-fibonacci-memoization/) — Caching pattern básico
+  - [`02-fuzzy-string-matching/`](./00-enterprise-examples/02-fuzzy-string-matching/) — Search tolerante a erros
+  
+  **� Documentados (READMEs completos):**
+  - `03-discount-optimization/` — E-commerce pricing otimizado
+  - `04-text-diff/` — Version control e track changes
+  - `05-cache-eviction/` — Memory management inteligente
+  - `06-minimum-path-cost/` — Logistics e routing
+  - `07-change-making/` — Payment systems
+  - `08-resource-allocation/` — Cloud/budget planning
+  
+  **🆕 Novos Casos Adicionados:**
+  - `09-task-scheduling/` — CI/CD pipelines, Critical Path Method
+  - `10-word-break/` — NLP, tokenization, search optimization
+  - `11-stock-trading/` — Algorithmic trading, portfolio optimization
+  - `12-matrix-chain/` — SQL query optimization, data pipelines
+  - `13-regex-matching/` — Pattern matching, API routing, validation
+  
+  - **👉 13 casos reais de DP em produção!**
+  - **📁 Estrutura organizada: Um problema por pasta**
+  - **📖 Documentação detalhada: Cada caso com README completo**
+  - **🎯 [Ver catálogo completo](./00-enterprise-examples/CATALOG.md)**
+
+### 📚 Classic Problems (Estudo Profundo)
 - [`01-knapsack-01/`](./01-knapsack-01/) — 0/1 Knapsack (maximização de valor com limite de peso)
   - ✅ Implementação completa em C# com Top-Down, Bottom-Up 2D/1D, reconstrução
 - [`02-longest-increasing-subsequence/`](./02-longest-increasing-subsequence/) — LIS (subsequência crescente mais longa)
@@ -43,6 +72,21 @@ Cada pasta tem:
 - **Projeto C# completo e testado** com múltiplas abordagens, reconstrução de soluções e benchmarks
 
 ## Como executar os projetos
+
+### Início Rápido (Enterprise Examples)
+```powershell
+# Fibonacci Memoization (Caching Pattern)
+cd 00-enterprise-examples/01-fibonacci-memoization
+dotnet run
+
+# Fuzzy String Matching (Search & Autocomplete)
+cd ../02-fuzzy-string-matching
+dotnet run
+
+# ... mais projetos em desenvolvimento
+```
+
+### Problemas Clássicos
 ```powershell
 # Navegue até a pasta do projeto
 cd 01-knapsack-01
@@ -51,7 +95,8 @@ cd 01-knapsack-01
 dotnet run
 
 # Ou execute todos os projetos em sequência
-cd 01-knapsack-01 ; dotnet run
+cd 00-enterprise-examples ; dotnet run
+cd ../01-knapsack-01 ; dotnet run
 cd ../02-longest-increasing-subsequence ; dotnet run
 cd ../03-edit-distance ; dotnet run
 cd ../04-coin-change ; dotnet run
